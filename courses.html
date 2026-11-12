@@ -15,7 +15,7 @@
   <header>
     <div class="nav-container">
       <a href="index.html" class="brand-logo">
-        <img src="img/logo.png" alt="Estarp Techies Academy Logo" class="brand-logo-img">
+        <img src="img/logo.png" alt="Estarp Techies Logo" class="brand-logo-img">
         <span class="brand-text">Estarp Techies <span></span></span>
       </a>
       <ul class="nav-links">
@@ -36,89 +36,47 @@
     <p>Hands-on, playful courses designed to spark curiosity and build real skills. Pick a path and dive in!</p>
   </section>
 
-  <section class="section-container">
-    <div class="courses-grid">
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-coding"><i class="fa-solid fa-code"></i></div>
-            <div class="course-info"><h3>Introduction to Coding</h3></div>
-          </div>
-          <p class="course-description">Learn how to build fun games and websites with easy block-based coding!</p>
-        </div>
-        <div class="course-footer">
-          <span class="course-tag">Beginner</span>
-          <button class="btn-explore" onclick="openCourseModal('Introduction to Coding')">Explore</button>
-        </div>
-      </div>
-
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-arts"><i class="fa-solid fa-palette"></i></div>
-            <div class="course-info"><h3>Creative Arts</h3></div>
-          </div>
-          <p class="course-description">Unleash your imagination through colorful digital painting, drawing, and crafting.</p>
-        </div>
-        <div class="course-footer">
-          <span class="course-tag">Creative</span>
-          <button class="btn-explore" onclick="openCourseModal('Creative Arts')">Explore</button>
+   <section class="section-container">
+    <!-- ✅ Courses rendered automatically from courses-data.js -->
+    <div class="courses-grid" data-courses></div>
+  </section>
+  
+  <!-- About preview -->
+  <section class="section-container about-section">
+    <div class="about-grid">
+      <div class="about-content">
+        <div class="badge-pill"><i class="fa-solid fa-heart"></i> Why Estarp Techies?</div>
+        <h2 class="section-title">Designed for Curiosity & Fun</h2>
+        <p class="about-text">
+          At Estarp Techies , we believe learning should feel like play! Our mission is to empower kids and young learners with creative skills in coding, science, math, and art through hands-on challenges and interactive feedback.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-card"><h3>50+</h3><p>Interactive Lessons</p></div>
+          <div class="stat-card"><h3>10k+</h3><p>Happy Students</p></div>
+          <div class="stat-card"><h3>100%</h3><p>Kid Safe & Ad-Free</p></div>
         </div>
       </div>
-
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-science"><i class="fa-solid fa-microscope"></i></div>
-            <div class="course-info"><h3>Exploring Science</h3></div>
+      <div class="about-features">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <div>
+            <h4>Gamified Learning</h4>
+            <p>Earn points, level up, and collect shiny rewards as you complete daily tasks.</p>
           </div>
-          <p class="course-description">Discover the secrets of nature, space, and awesome chemistry experiments!</p>
         </div>
-        <div class="course-footer">
-          <span class="course-tag">Discovery</span>
-          <button class="btn-explore" onclick="openCourseModal('Exploring Science')">Explore</button>
-        </div>
-      </div>
-
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-math"><i class="fa-solid fa-calculator"></i></div>
-            <div class="course-info"><h3>Fun Math Puzzles</h3></div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <h4>Safe Environment</h4>
+            <p>Zero ads, strict privacy protection, and parent-friendly progress reports.</p>
           </div>
-          <p class="course-description">Solve brain-teasing riddles and master numbers through interactive games!</p>
         </div>
-        <div class="course-footer">
-          <span class="course-tag">Logic</span>
-          <button class="btn-explore" onclick="openCourseModal('Fun Math Puzzles')">Explore</button>
-        </div>
-      </div>
-
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-web"><i class="fa-solid fa-globe"></i></div>
-            <div class="course-info"><h3>Web Design Basics</h3></div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <div>
+            <h4>Self-Paced Exploration</h4>
+            <p>Learn at your own pace without pressure or stress.</p>
           </div>
-          <p class="course-description">Design your own colorful web pages with HTML and CSS fundamentals.</p>
-        </div>
-        <div class="course-footer">
-          <span class="course-tag">Web</span>
-          <button class="btn-explore" onclick="openCourseModal('Web Design Basics')">Explore</button>
-        </div>
-      </div>
-
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-robot"><i class="fa-solid fa-robot"></i></div>
-            <div class="course-info"><h3>Intro to Robotics</h3></div>
-          </div>
-          <p class="course-description">Build and program simple robots while learning how sensors and motors work.</p>
-        </div>
-        <div class="course-footer">
-          <span class="course-tag">Robotics</span>
-          <button class="btn-explore" onclick="openCourseModal('Intro to Robotics')">Explore</button>
         </div>
       </div>
     </div>
@@ -179,6 +137,8 @@
     </div>
   </div>
 
+    <script src="courses-data.js"></script>
   <script src="script.js"></script>
+</body>
 </body>
 </html>

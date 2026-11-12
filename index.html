@@ -65,61 +65,11 @@
   </section>
 
   <!-- Featured Courses Preview -->
-  <section class="section-container">
-    <div class="section-header text-center">
-      <h2 class="section-title">Featured Courses</h2>
-      <p class="section-subtitle">Pick a path and start building exciting skills!</p>
-    </div>
-
-    <div class="courses-grid">
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-coding"><i class="fa-solid fa-code"></i></div>
-            <div class="course-info"><h3>Introduction to Coding</h3></div>
-          </div>
-          <p class="course-description">Learn how to build fun games and websites with easy block-based coding!</p>
-        </div>
-        <div class="course-footer">
-          <span class="course-tag">Beginner</span>
-          <button class="btn-explore" onclick="openCourseModal('Introduction to Coding')">Explore</button>
-        </div>
-      </div>
-
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-arts"><i class="fa-solid fa-palette"></i></div>
-            <div class="course-info"><h3>Creative Arts</h3></div>
-          </div>
-          <p class="course-description">Unleash your imagination through colorful digital painting, drawing, and crafting.</p>
-        </div>
-        <div class="course-footer">
-          <span class="course-tag">Creative</span>
-          <button class="btn-explore" onclick="openCourseModal('Creative Arts')">Explore</button>
-        </div>
-      </div>
-
-      <div class="course-card">
-        <div>
-          <div class="course-header">
-            <div class="course-icon icon-science"><i class="fa-solid fa-microscope"></i></div>
-            <div class="course-info"><h3>Exploring Science</h3></div>
-          </div>
-          <p class="course-description">Discover the secrets of nature, space, and awesome chemistry experiments!</p>
-        </div>
-        <div class="course-footer">
-          <span class="course-tag">Discovery</span>
-          <button class="btn-explore" onclick="openCourseModal('Exploring Science')">Explore</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center" style="margin-top: 3rem;">
-      <a href="courses.html" class="btn-primary">View All Courses</a>
-    </div>
+    <section class="section-container">
+    <!-- ✅ Courses rendered automatically from courses-data.js -->
+    <div class="courses-grid" data-courses></div>
   </section>
-
+  
   <!-- About preview -->
   <section class="section-container about-section">
     <div class="about-grid">
@@ -210,21 +160,33 @@
     </div>
   </footer>
 
-  <!-- Coming Soon Modal -->
+    <!-- Course Video Modal -->
   <div class="modal-overlay" id="courseModal">
-    <div class="modal-card">
+    <div class="modal-card modal-card-video">
       <button class="modal-close-btn" id="closeCourseModal">&times;</button>
-      <div class="modal-icon"><i class="fa-solid fa-hourglass-half"></i></div>
       <div class="modal-header">
         <h3 id="modalCourseTitle">Course</h3>
       </div>
       <div class="modal-body">
-        <p>This course is <strong>coming soon</strong>! We're putting the finishing touches on it. Check back soon or subscribe to our newsletter to be notified.</p>
-        <button class="btn-submit" onclick="closeModal('courseModal')">Got it</button>
+        <div class="video-wrapper">
+          <video
+            id="modalCourseVideo"
+            controls
+            playsinline
+            preload="metadata"
+            poster=""
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p id="modalCourseDesc">Course preview coming soon.</p>
+        <button class="btn-submit" onclick="closeModal('courseModal')">Close</button>
       </div>
     </div>
   </div>
 
+   <script src="courses-data.js"></script>
   <script src="script.js"></script>
+</body>
 </body>
 </html>
