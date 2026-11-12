@@ -64,12 +64,8 @@
     </div>
   </section>
 
-  <!-- Featured Courses Preview -->
-    <section class="section-container">
-    <!-- ✅ Courses rendered automatically from courses-data.js -->
-    <div class="courses-grid" data-courses></div>
-  </section>
-  
+
+
   <!-- About preview -->
   <section class="section-container about-section">
     <div class="about-grid">
@@ -160,30 +156,6 @@
     </div>
   </footer>
 
-    <!-- Course Video Modal -->
-  <div class="modal-overlay" id="courseModal">
-    <div class="modal-card modal-card-video">
-      <button class="modal-close-btn" id="closeCourseModal">&times;</button>
-      <div class="modal-header">
-        <h3 id="modalCourseTitle">Course</h3>
-      </div>
-      <div class="modal-body">
-        <div class="video-wrapper">
-          <video
-            id="modalCourseVideo"
-            controls
-            playsinline
-            preload="metadata"
-            poster=""
-          >
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <p id="modalCourseDesc">Course preview coming soon.</p>
-        <button class="btn-submit" onclick="closeModal('courseModal')">Close</button>
-      </div>
-    </div>
-  </div>
 
    <script src="courses-data.js"></script>
   <script src="script.js"></script>

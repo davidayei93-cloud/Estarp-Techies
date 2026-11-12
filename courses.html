@@ -123,16 +123,28 @@
     </div>
   </footer>
 
+ 
+    <!-- Course Video Modal -->
   <div class="modal-overlay" id="courseModal">
-    <div class="modal-card">
+    <div class="modal-card modal-card-video">
       <button class="modal-close-btn" id="closeCourseModal">&times;</button>
-      <div class="modal-icon"><i class="fa-solid fa-hourglass-half"></i></div>
       <div class="modal-header">
         <h3 id="modalCourseTitle">Course</h3>
       </div>
       <div class="modal-body">
-        <p><strong>Coming Soon!</strong> This course is being crafted with love. Subscribe to our newsletter to be the first to know when it launches.</p>
-        <button class="btn-submit" onclick="closeModal('courseModal')">Got it</button>
+        <div class="video-wrapper">
+          <video
+            id="modalCourseVideo"
+            controls
+            playsinline
+            preload="metadata"
+            poster=""
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p id="modalCourseDesc">Course preview coming soon.</p>
+        <button class="btn-submit" onclick="closeModal('courseModal')">Close</button>
       </div>
     </div>
   </div>
