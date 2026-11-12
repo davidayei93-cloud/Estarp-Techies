@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Estarp Techies Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="img/logo.png" alt="Estarp Techies Academy Logo" class="brand-logo-img">
+        <span class="brand-text">Estarp Techies <span>Academy</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Our Services</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-signup">Contact Us</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-badge"><i class="fa-solid fa-envelope-open-text"></i> Say Hello</div>
+    <h1>Get in Touch</h1>
+    <p>Have questions, feedback, or just want to say hi? We'd love to hear from you!</p>
+  </section>
+
+  <section class="section-container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div>
+          <h3>Contact Information</h3>
+          <p>Reach out to us anytime. Our team typically responds within 24 hours.</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>support@estarptechies.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+1 (800) 555-LEARN</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>123 Innovation Way, Tech City</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon – Fri, 9:00am – 6:00pm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Full Name</label>
+            <input type="text" id="contactName" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" placeholder="yourname@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Your Message</label>
+            <textarea id="contactMessage" rows="5" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo footer-logo">
+          <img src="img/logo.png" alt="Estarp Techies Logo" class="brand-logo-img">
+          <span class="brand-text">Estarp Techies <span></span></span>
+        </a>
+        <p>We Build. You Smile. — Making learning fun, interactive, and accessible for everyone!</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Our Story</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Get monthly updates on new lessons and activities.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Estarp Techies Academy. Built for fun and interactive learning.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

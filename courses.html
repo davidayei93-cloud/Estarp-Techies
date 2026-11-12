@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | Estarp Techies Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="img/logo.png" alt="Estarp Techies Academy Logo" class="brand-logo-img">
+        <span class="brand-text">Estarp Techies <span></span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Our Services</a></li>
+        
+      </ul>
+      <a href="contact.html" class="btn-signup">Contact Us</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-badge"><i class="fa-solid fa-graduation-cap"></i> Learning Paths</div>
+    <h1>Our Courses</h1>
+    <p>Hands-on, playful courses designed to spark curiosity and build real skills. Pick a path and dive in!</p>
+  </section>
+
+  <section class="section-container">
+    <div class="courses-grid">
+      <div class="course-card">
+        <div>
+          <div class="course-header">
+            <div class="course-icon icon-coding"><i class="fa-solid fa-code"></i></div>
+            <div class="course-info"><h3>Introduction to Coding</h3></div>
+          </div>
+          <p class="course-description">Learn how to build fun games and websites with easy block-based coding!</p>
+        </div>
+        <div class="course-footer">
+          <span class="course-tag">Beginner</span>
+          <button class="btn-explore" onclick="openCourseModal('Introduction to Coding')">Explore</button>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div>
+          <div class="course-header">
+            <div class="course-icon icon-arts"><i class="fa-solid fa-palette"></i></div>
+            <div class="course-info"><h3>Creative Arts</h3></div>
+          </div>
+          <p class="course-description">Unleash your imagination through colorful digital painting, drawing, and crafting.</p>
+        </div>
+        <div class="course-footer">
+          <span class="course-tag">Creative</span>
+          <button class="btn-explore" onclick="openCourseModal('Creative Arts')">Explore</button>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div>
+          <div class="course-header">
+            <div class="course-icon icon-science"><i class="fa-solid fa-microscope"></i></div>
+            <div class="course-info"><h3>Exploring Science</h3></div>
+          </div>
+          <p class="course-description">Discover the secrets of nature, space, and awesome chemistry experiments!</p>
+        </div>
+        <div class="course-footer">
+          <span class="course-tag">Discovery</span>
+          <button class="btn-explore" onclick="openCourseModal('Exploring Science')">Explore</button>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div>
+          <div class="course-header">
+            <div class="course-icon icon-math"><i class="fa-solid fa-calculator"></i></div>
+            <div class="course-info"><h3>Fun Math Puzzles</h3></div>
+          </div>
+          <p class="course-description">Solve brain-teasing riddles and master numbers through interactive games!</p>
+        </div>
+        <div class="course-footer">
+          <span class="course-tag">Logic</span>
+          <button class="btn-explore" onclick="openCourseModal('Fun Math Puzzles')">Explore</button>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div>
+          <div class="course-header">
+            <div class="course-icon icon-web"><i class="fa-solid fa-globe"></i></div>
+            <div class="course-info"><h3>Web Design Basics</h3></div>
+          </div>
+          <p class="course-description">Design your own colorful web pages with HTML and CSS fundamentals.</p>
+        </div>
+        <div class="course-footer">
+          <span class="course-tag">Web</span>
+          <button class="btn-explore" onclick="openCourseModal('Web Design Basics')">Explore</button>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div>
+          <div class="course-header">
+            <div class="course-icon icon-robot"><i class="fa-solid fa-robot"></i></div>
+            <div class="course-info"><h3>Intro to Robotics</h3></div>
+          </div>
+          <p class="course-description">Build and program simple robots while learning how sensors and motors work.</p>
+        </div>
+        <div class="course-footer">
+          <span class="course-tag">Robotics</span>
+          <button class="btn-explore" onclick="openCourseModal('Intro to Robotics')">Explore</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo footer-logo">
+          <img src="img/logo.png" alt="Estarp Techies Academy Logo" class="brand-logo-img">
+          <span class="brand-text">Estarp Techies <span>Academy</span></span>
+        </a>
+        <p>We Build. You Smile. — Making learning fun, interactive, and accessible for everyone!</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Our Story</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Get monthly updates on new lessons and activities.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Estarp Techies Academy. Built for fun and interactive learning.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="courseModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeCourseModal">&times;</button>
+      <div class="modal-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+      <div class="modal-header">
+        <h3 id="modalCourseTitle">Course</h3>
+      </div>
+      <div class="modal-body">
+        <p><strong>Coming Soon!</strong> This course is being crafted with love. Subscribe to our newsletter to be the first to know when it launches.</p>
+        <button class="btn-submit" onclick="closeModal('courseModal')">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
